@@ -1021,6 +1021,7 @@ Proper hygiene was maintained. It is a pocket friendly restaurant.
             </select>
         
             <input type="date" name="booking_date" aria-label="Reservation date" class="input-field">
+            <input type="time" name="booking_time" aria-label="Reservation time" class="input-field">
           </div>
         
           <textarea name="message" required placeholder="Message" aria-label="Message" class="input-field"></textarea>
@@ -1034,9 +1035,10 @@ Proper hygiene was maintained. It is a pocket friendly restaurant.
             var phoneNumber = document.getElementsByName("phone")[0].value;
             var totalPerson = document.getElementsByName("total_person")[0].value;
             var bookingDate = document.getElementsByName("booking_date")[0].value;
+             var bookingTime = document.getElementsByName("booking_time")[0].value;
             var message = document.getElementsByName("message")[0].value;
         
-            var whatsappMessage = "Name: " + fullName + "\nPhone: " + phoneNumber + "\nTotal Person: " + totalPerson + "\nBooking Date: " + bookingDate + "\nMessage: " + message;
+            var whatsappMessage = "Name: " + fullName + "\nPhone: " + phoneNumber + "\nTotal Person: " + totalPerson + "\nBooking Date: " + bookingDate +  "\nBooking Time: " + bookingTime +"\nMessage: " + message;
         
             var whatsappUrl = "https://wa.me/+918376974275?text=" + encodeURIComponent(whatsappMessage);
         
